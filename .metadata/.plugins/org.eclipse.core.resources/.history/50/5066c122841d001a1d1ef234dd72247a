@@ -1,0 +1,71 @@
+package com.hotel.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.hotel.tools.MyTools;
+
+
+/**
+ * Servlet implementation class Login
+ */
+@WebServlet("/Login")
+public class Login extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public Login() {
+        super();
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//获取用户ID和密码框的内容
+		String userId = MyTools.toChinese(request.getParameter("id"));//账号
+		String password = MyTools.toChinese(request.getParameter("password"));//密码
+		
+		//连接数据库判断用户登录
+		try 
+		{
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection connection =DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel?characterEncoding=utf-8","root","123456");
+			Statement stmtStatement = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_READ_ONLY);
+			String sqlString = "selete password form login where userID = '"+userId+"'";
+			//获得结果集
+			ResultSet rs = stmtStatement.executeQuery(sqlString);
+			//账号不存在
+			if(rs==null)
+			{
+				response.setContentType("text/html;charset=utf-8");
+				PrintWriter outPrintWriter = response.getWriter();
+				outPrintWriter.println("<script>alert("账号不存在，请先注册账号!");</script>");
+				
+			}
+		} 
+		catch (Exception e) 
+		{
+			// TODO: handle exception
+		}
+	}
+}

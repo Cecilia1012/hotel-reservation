@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body{
+	background:url("/hotelReservation/image/login_pic.jpg");
+}
+
+#bread{
+	color:black;
+	margin-left:11%;
+	position: relative;
+    top: 60px;
+}
+
+#container{
+	background-color:rgba(255,255,255,0.6);/* 半透明背景 */
+	border-radius: 20px;
+	margin:0 auto;
+	padding-top:2%;
+	margin-top:5%;
+	margin-left:10%;
+	margin-right:10%;
+	margin-bottom:3%;
+}

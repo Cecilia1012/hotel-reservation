@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+body{
+	background-size:100%;
+	background:url("/hotelReservation/image/login_pic.jpg");
+}
+
+/*中央整体 */
+#container{
+	background-color:rgba(255,255,255,0.6);/* 半透明背景 */
+	width: 500px;
+	height: 300px;
+	border-radius: 20px;
+	margin:0 auto;
+	text-align:center;
+	padding-top:2%;
+	margin-top:5%;
+}
+
+/* 表单 */
+#login_form{
+	margin-top:5%;
+}
+
+/*账号 */
+#account{
+	margin-bottom:5%;
+}
+#id{
+	border-radius: 8px;
+	width: 200px;
+	height: 25px;
+	margin-left:5%;
+}
+
+/*密码*/
+#password{
+	border-radius: 8px;
+	width: 200px;
+	height: 25px;
+	margin-left:5%;
+}
+
+/*提示间隙*/
+#pwd{
+	margin-top:3%;
+}
+
+/*登录注册*/
+.register{
+	margin-right:25%;
+	margin-left:3%;
+}
+.forget{
+	margin-left:10%;
+}
+
+/*登录按钮*/
+#loginBtn{
+	width: 100px;
+    margin-top: 5%;
+}

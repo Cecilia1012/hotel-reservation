@@ -1,0 +1,13 @@
+0:0:0:0:0:0:0:1 - - [05/Dec/2019:00:01:00 +0800] "GET /hotelReservation/jsp/login.jsp HTTP/1.1" 200 1054
+0:0:0:0:0:0:0:1 - - [05/Dec/2019:00:01:00 +0800] "GET /hotelReservation/css/login.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [05/Dec/2019:00:01:00 +0800] "GET /hotelReservation/img/login_pic.jpg HTTP/1.1" 404 1116
+0:0:0:0:0:0:0:1 - - [05/Dec/2019:00:01:00 +0800] "GET /hotelReservation/css/footer.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [05/Dec/2019:00:01:00 +0800] "GET /hotelReservation/image/login_pic.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [05/Dec/2019:00:01:35 +0800] "GET /hotelReservation/jsp/login.jsp HTTP/1.1" 200 1056
+0:0:0:0:0:0:0:1 - - [05/Dec/2019:00:01:35 +0800] "GET /hotelReservation/css/login.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [05/Dec/2019:00:01:35 +0800] "GET /hotelReservation/image/login_pic.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [05/Dec/2019:00:01:35 +0800] "GET /hotelReservation/css/footer.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [05/Dec/2019:00:02:05 +0800] "GET /hotelReservation/jsp/login.jsp HTTP/1.1" 200 1056
+0:0:0:0:0:0:0:1 - - [05/Dec/2019:00:02:05 +0800] "GET /hotelReservation/css/login.css HTTP/1.1" 200 341
+0:0:0:0:0:0:0:1 - - [05/Dec/2019:00:02:05 +0800] "GET /hotelReservation/image/login_pic.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [05/Dec/2019:00:02:05 +0800] "GET /hotelReservation/css/footer.css HTTP/1.1" 304 -

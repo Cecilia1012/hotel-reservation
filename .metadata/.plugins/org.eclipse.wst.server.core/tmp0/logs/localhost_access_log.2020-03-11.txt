@@ -1,0 +1,7 @@
+127.0.0.1 - - [11/Mar/2020:17:34:51 +0800] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [11/Mar/2020:17:34:53 +0800] "GET /hotelReservation/index.jsp HTTP/1.1" 200 131
+0:0:0:0:0:0:0:1 - - [11/Mar/2020:17:34:54 +0800] "GET /hotelReservation/jsp/login.jsp HTTP/1.1" 200 1197
+0:0:0:0:0:0:0:1 - - [11/Mar/2020:17:34:54 +0800] "GET /hotelReservation/css/bootstrap.min.css HTTP/1.1" 200 121200
+0:0:0:0:0:0:0:1 - - [11/Mar/2020:17:34:54 +0800] "GET /hotelReservation/css/login.css HTTP/1.1" 200 846
+0:0:0:0:0:0:0:1 - - [11/Mar/2020:17:34:54 +0800] "GET /hotelReservation/js/login.js HTTP/1.1" 200 579
+0:0:0:0:0:0:0:1 - - [11/Mar/2020:17:34:54 +0800] "GET /hotelReservation/image/login_pic.jpg HTTP/1.1" 200 141905

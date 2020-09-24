@@ -1,0 +1,47 @@
+@charset "UTF-8";
+body{
+	background-size:100%;
+	background:url("/hotelReservation/image/login_pic.jpg");
+}
+
+
+p{
+	margin:3%;
+}
+
+/*中央整体 */
+#container{
+	background-color:rgba(255,255,255,0.6);/* 半透明背景 */
+	border-radius: 20px;
+	margin:0 auto;
+	text-align:center;
+	padding-top:2%;
+	margin-top:5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align:left;
+}
+
+#forget_form{
+	margin-left:10%;
+}
+
+#forgetBtn{
+	margin-top:3%;
+	margin-bottom:3%;
+	margin-left:3%;
+}
+
+.text{
+	border-radius: 30px;
+}
+
+.forget_pic{
+	float:right;
+	margin-top: -25%;
+	margin-right:25%;
+}
+
+span{
+	margin-left:2%;
+}
